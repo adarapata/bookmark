@@ -1,7 +1,12 @@
 Bookmark::Application.routes.draw do
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
+  resources :users
+  resources :sessions, only: [:new]
 
+  match '/signup', to: 'users#new'
+  match '/signin', to: 'sessions#new'
+
+  # The priority is based upon order of creation:
+  # first created -> highest priorit
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
