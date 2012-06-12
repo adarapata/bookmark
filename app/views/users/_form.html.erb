@@ -12,21 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :id %><br />
-    <%= f.number_field :id %>
-  </div>
-  <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
     <%= f.label :pass %><br />
-    <%= f.text_field :pass %>
-  </div>
-  <div class="field">
-    <%= f.label :lastupdate %><br />
-    <%= f.number_field :lastupdate %>
-  </div>
+    <%= f.password_field :pass %>
   <div class="actions">
     <%= f.submit %>
   </div>
