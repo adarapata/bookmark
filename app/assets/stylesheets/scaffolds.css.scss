@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background: #eee image-url("bg_78_9.gif") repeat;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -11,7 +11,8 @@ p, ol, ul, td {
   line-height: 18px; }
 
 h1{
-  color:#f00;	
+  color:#000;
+  font-size:120%;	
 }
 
 pre {
