@@ -9,6 +9,7 @@ describe User do
   it { should respond_to(:name) }
   it { should respond_to(:pass) }
   it { should respond_to(:lastupdate) }
+  it { should respond_to(:password_digest) }
 
   it { should be_valid }
   
