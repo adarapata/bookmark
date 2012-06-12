@@ -1,7 +1,6 @@
 <header class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "Home", root_path %></li>
