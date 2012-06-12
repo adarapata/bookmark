@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to user
     else
       # Create an error message and re-render the signin form.
-      flash[:error] = 'Fuck!' # Not quite right!      
+      flash[:error] = 'Invalid email/password combination' # Not quite right!      
       render 'new'
     end
   end
