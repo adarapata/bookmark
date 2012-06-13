@@ -22,18 +22,25 @@ pre {
 
 a {
   color: #000;
+  text-decoration: underline;
   &:visited {
-    color: #666; }
+    color: #000;
+  }
   &:hover {
-    color: #fff;
-    background-color: #000; } }
+    color: #000;
+    background-color: #7cfc00; 
+  } 
+}
 
 div {
   &.field, &.actions {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px;  
+  } 
+}
 
 #notice {
-  color: green; }
+  color: #7cfc00;
+  font-weight: bold; }
 
 .field_with_errors {
   padding: 2px;
@@ -43,10 +50,9 @@ div {
 #error_explanation {
   width: 450px;
   border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
+  padding: 7px 7px 0 7px;
+  margin: 0px auto 20px auto;
+  background-color: #ff0;
   h2 {
     text-align: left;
     font-weight: bold;
