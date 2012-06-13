@@ -1,6 +1,37 @@
 <%= provide(:title, '') %>
 <% if signed_in? %>
- <h1>サインインしてる</h1>
+
+  <h1>サインインしてる</h1>
+  <!-- Begin Left Column -->
+  <div id="my_bookmark">
+    <h2>new!</h2>
+    <ul>
+      <li><a>メガドライブ</a></li>
+　　　<li><a>メガドライブ</a></li>
+　　　<li><a>メガドライブ</a></li>
+　　　<li><a>メガドライブ</a></li>
+　　　<li><a>メガドライブ</a></li>
+　　　<li><a>メガドライブ</a></li>
+    </ul>
+  ページ遷移ここらへん
+  </div>
+  <!-- End Left Column -->
+		 
+  <!-- Begin Right Column -->
+  <div id="new_entry">
+    <h2>my bookmark</h2>
+    <ul>
+      <li><a>セガサターン</a></li>
+　　　<li><a>セガサターン</a></li>
+　　　<li><a>セガサターン</a></li>
+　　　<li><a>セガサターン</a></li>
+　　　<li><a>セガサターン</a></li>
+　　　<li><a>セガサターン</a></li>
+    </ul>
+  ページ遷移ここらへん		 
+  </div>
+  <!-- End Right Column -->
+
 <% else %>
  <h1>サインインしてない！</h1>
  <section>
@@ -9,4 +40,8 @@
    <%= form_for(@user) do |f| %>
      <%= render :template => 'users/new' %>
    <% end %>
+
+<div id="footer">
+Copyright (C) 有明三日目. All Rights Reserved.　
+</div>
 <% end %>
