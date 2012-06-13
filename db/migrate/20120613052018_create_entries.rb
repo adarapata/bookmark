@@ -6,6 +6,6 @@ class CreateEntries < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :entries, :url,:title
+    #add_index :entries, :url, :title
   end
 end
