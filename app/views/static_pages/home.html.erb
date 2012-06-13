@@ -1,2 +1,6 @@
 <%= provide(:title, '') %>
-<h4>title!</h4>
+<% if signed_in? %>
+ <h1>サインインしてる！</h1>
+<% else %>
+ <h1>サイン印してない！</h1>
+<% end %>
