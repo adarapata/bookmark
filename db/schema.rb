@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120612061045) do
+ActiveRecord::Schema.define(:version => 20120613052018) do
+
+  create_table "entries", :force => true do |t|
+    t.string   "url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "entries", ["url"], :name => "index_entries_on_url"
 
   create_table "users", :force => true do |t|
     t.string   "name"
