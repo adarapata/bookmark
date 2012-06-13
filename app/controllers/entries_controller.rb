@@ -5,11 +5,8 @@ class EntriesController < ApplicationController
   end
   
   def create
-    @entry = Entry.new(params[:user])
+    @entry = Entry.new(params[:id])
   end
   
-  def show
-    @entry = Entry.find(params[:id])
-  end
 
 end

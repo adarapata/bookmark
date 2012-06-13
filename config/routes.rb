@@ -3,6 +3,7 @@ Bookmark::Application.routes.draw do
 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :entries, only: [:new, :create]
 
   root to: 'static_pages#home'
 
@@ -10,7 +11,6 @@ Bookmark::Application.routes.draw do
   match '/signin', to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
   
-  match '/entry', to: 'entries#show'
   # The priority is based upon order of creation:
   # first created -> highest priorit
   # Sample of regular route:
