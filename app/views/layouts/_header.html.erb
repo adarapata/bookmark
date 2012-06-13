@@ -5,11 +5,9 @@
     </div>
     <div id="header_navi">
       <ul id="list_header">
-        <li><%= link_to "Home", root_path %></li>
         <% if signed_in? %>
+         <li><%= link_to "Home", root_path %></li>
          <li><%= link_to "MyPage", root_path %></li>
-        <% else %>
-         
         <% end %>
         <li></li>
       </ul>
@@ -17,8 +15,6 @@
     <div id="form">
       <% if signed_in? %>
        <%= link_to "Sign out", signout_path, method: "delete" %>　
-      <% else %>
-       <%= render :template => "sessions/new" %>
       <% end %>
     </div>
   </div>
