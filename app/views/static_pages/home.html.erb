@@ -3,4 +3,10 @@
  <h1>サインインしてる！</h1>
 <% else %>
  <h1>サイン印してない！</h1>
+ <section>
+   <%= render :template => 'sessions/new' %>
+ </section>
+   <%= form_for(@user) do |f| %>
+     <%= render :template => 'users/new' %>
+   <% end %>
 <% end %>
