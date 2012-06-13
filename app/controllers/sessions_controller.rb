@@ -10,8 +10,8 @@ class SessionsController < ApplicationController
       redirect_back_or user
     else
       # Create an error message and re-render the signin form.
-      flash.now[:error] = 'Invalid name/password combination' # Not quite right!    
-      render 'new'
+      flash[:error] = 'Invalid name/password combination' # Not quite right!    
+      redirect_to :back
     end
   end
   
