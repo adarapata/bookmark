@@ -1,7 +1,8 @@
 <%= provide(title:"Sign Up!")  %>
-<h1>Sign Up!</h1>
+<div id="sign_up"> 
+  <h2>Sign Up!</h2>
 
+  <%= render :template => 'users/_form' %>
 
-<%= render :template => 'users/_form' %>
-
-<%= link_to 'Back', users_path %>
+  <%= link_to 'Back', users_path %>
+</div>
