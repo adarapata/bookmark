@@ -5,13 +5,13 @@
     </div>
     <div id="header_navi">
       <ul id="list_header">
-        <li><a href="users/new.html">Home</a></li>
-        <li><a href="users/hogehoge.html">MyPage</a></li>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Hoge", root_path %></li>
         <li></li>
       </ul>
     </div>
     <div id="form">
-    form
+      <%= render :template => "sessions/new" %>
     </div>
   </div>
 </header>
