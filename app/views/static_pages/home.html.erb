@@ -17,12 +17,7 @@
   <div id="new_entry">
     <h2>my bookmark</h2>
     <ul>
-      <li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
+      <%= render @bookmarks %>
     </ul>
   ページ遷移ここらへん		 
   </div>
@@ -36,7 +31,6 @@
    <%= form_for(@user) do |f| %>
      <%= render :template => 'users/new' %>
    <% end %>
-
 <% end %>
 
 <div id="footer">

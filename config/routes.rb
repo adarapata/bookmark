@@ -1,4 +1,4 @@
-Bookmark::Application.routes.draw do
+AriakeBook::Application.routes.draw do
   get "static_pages/home"
 
   resources :users

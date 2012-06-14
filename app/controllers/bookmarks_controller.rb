@@ -1,18 +1,18 @@
 class BookmarksController < ApplicationController
   def index
-    @bookmark = Bookmarks.all
+    @bookmarks = Bookmark.all
   end
   
   def new
-    @bookmark = Bookmark.new
+    @bookmarks = Bookmark.new
   end
 
   def create
-    @boookmark = Bookmark.new(params[:id])
+    @boookmarks = Bookmark.new(params[:id])
   end
 
   def show
-    @bookmark = Bookmarks.find(1)
-    @entry = @bookmark.entry
+    @bookmarks = Bookmark.find(params)
+    @entry = @bookmarks.entry
   end
 end
