@@ -5,10 +5,8 @@ class EntriesController < ApplicationController
   end
   
   def create
-    @entry = Entry.new(params[:id])
-    if Entry.find_by_url(@entry.url).nil?
-      @entry.save
-    end
+    @entry = Entry.create(params[:entry])
+    redirect_to "/bookmark?entry_id=#{@entry.id}"
   end
   
   def show

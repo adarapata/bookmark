@@ -4,15 +4,28 @@ class BookmarksController < ApplicationController
   end
   
   def new
-    @bookmarks = Bookmark.new
+    @entry = Entry.find(params[:entry_id])
+    @bookmark = Bookmark.new
   end
 
   def create
-    @boookmarks = Bookmark.new(params[:id])
+    @bookmark = Bookmark.new(params[:bookmark])
+    if @bookmark.save
+      redirect_to root_path
+    end
+    
   end
 
   def show
     @bookmarks = Bookmark.find(params)
     @entry = @bookmarks.entry
+  end
+
+  def add_bookmark
+    @entry = Entry.new
+  end
+  
+  def add_comment
+
   end
 end
