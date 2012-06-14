@@ -30,8 +30,6 @@ ActiveRecord::Schema.define(:version => 20120613130735) do
     t.string   "title"
   end
 
-  add_index "entries", ["url"], :name => "index_entries_on_url"
-
   create_table "users", :force => true do |t|
     t.string   "name"
     t.integer  "lastupdate"
