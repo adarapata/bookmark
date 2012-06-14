@@ -7,7 +7,7 @@
       <ul id="list_header">
         <% if signed_in? %>
          <li><%= link_to "Home", root_path %></li>
-         <li><%= link_to "MyPage", root_path %></li>
+         <li><%= link_to "Add", '/add' %></li>
         <% end %>
         <li><% if signed_in? %>
        <%= link_to "Sign out", signout_path, method: "delete" %>　
