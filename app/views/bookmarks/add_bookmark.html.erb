@@ -2,12 +2,13 @@
 <% if signed_in? %>
 
   <h1>ブックマークを追加するよ</h1>
-  <form>
+  <%= form_for(@entry) do |f| %>
     <div class="sign">
-      <label>URL</label><br />
-      <textarea cols="35" rows="7" name="url" id="comments">url</textarea>
+       <%= f.text_field :url %>
+       <%= f.submit %>
     </div>
-  </form>		 
+    
+  <% end %>		 
 <% end %>
 
 <div id="footer">
