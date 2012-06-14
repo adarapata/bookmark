@@ -1,0 +1,15 @@
+<%= provide(:title, "ブックマークを追加するページ") %>
+<% if signed_in? %>
+
+  <h1>ブックマークを追加するよ</h1>
+  <form>
+    <div class="sign">
+      <label>URL</label><br />
+      <textarea cols="35" rows="7" name="url" id="comments">url</textarea>
+    </div>
+  </form>		 
+<% end %>
+
+<div id="footer">
+Copyright (C) 有明三日目. All Rights Reserved.　
+</div>

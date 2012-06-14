@@ -46,10 +46,9 @@ a {
 }
 
 div {
-  &.field, &.actions {
+  &.field,&.actions {
     margin-bottom: 10px;  
-  } 
-}
+  } }
 
 #container {
   width: 800px;
@@ -98,3 +97,12 @@ div {
   margin: 10px;
   padding: 10px;
   text-align: center; }
+
+.submit{
+    border:1px solid #333;
+    padding: 4px 10px;
+    color: #7cfc00;
+    cursor: pointer;
+    background: #333;
+    border-radius: 5px;
+}
