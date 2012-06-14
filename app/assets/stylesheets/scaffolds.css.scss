@@ -9,7 +9,16 @@ body {
   font-size: 100%;
   line-height: 1.3em; }
 
-p, ol, ul, td {
+p {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  width: 400px;
+  padding: 7px;
+  margin: 10px auto;
+  text-align: center;
+ }
+ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 1em;
   line-height: 1.3em; }
