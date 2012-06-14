@@ -1,7 +1,7 @@
 <%= provide(:title, '') %>
 <% if signed_in? %>
 
-  <h1>サインインしてる</h1>
+  <h1>サインインしてるよ</h1>
   <!-- Begin Left Column -->
   <div id="my_bookmark">
     <h2>new!</h2>
@@ -27,7 +27,7 @@
   <!-- End Right Column -->
 
 <% else %>
- <h1>サインインしてない！</h1>
+ <h1>サインインしてないよ</h1>
  <section>
    <%= render :template => 'sessions/new' %>
  </section>

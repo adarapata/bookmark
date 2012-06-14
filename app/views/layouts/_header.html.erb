@@ -9,13 +9,10 @@
          <li><%= link_to "Home", root_path %></li>
          <li><%= link_to "MyPage", root_path %></li>
         <% end %>
-        <li></li>
-      </ul>
-    </div>
-    <div id="form">
-      <% if signed_in? %>
+        <li><% if signed_in? %>
        <%= link_to "Sign out", signout_path, method: "delete" %>　
-      <% end %>
+      <% end %></li>
+      </ul>
     </div>
   </div>
 </div>
