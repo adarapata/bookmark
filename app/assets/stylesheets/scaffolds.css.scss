@@ -20,7 +20,7 @@ h1{
 }
 
 h2{
-  margin: 0px;
+  margin: 5px 0px;
   padding: 0px;
   font-size:1.2em;	
 }
@@ -68,7 +68,7 @@ div {
   width: 350px;
   border: 2px solid red;
   padding: 7px;
-  margin: 20px auto;
+  margin: 10px auto;
   background-color: #fff;
   color: #f00;
   h2 {
@@ -80,6 +80,8 @@ div {
     margin-bottom: 0px;
     background-color: #f00;
     color: #000; }
+  ul {
+     margin: 5px 5px 5px 1em; }  
   ul li {
-    font-size: 0.8em;
-    list-style-type: square; } }
+     font-size: 0.8em;
+     list-style-type: square; } }
