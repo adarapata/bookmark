@@ -17,12 +17,10 @@
   <div id="new_entry">
     <h2>my bookmark</h2>
     <ul>
-      <li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
+      
+      <% @bookmarks.each do |bm| %>
+        <li><h2><%= link_to bm.entry.title , bm.entry.url , :target =>["_blank"] %></h2></li>
+      <% end %>
     </ul>
   ページ遷移ここらへん		 
   </div>
