@@ -6,7 +6,9 @@ class EntriesController < ApplicationController
   
   def create
     @entry = Entry.new(params[:id])
-    @entry.save
+    if Entry.find_by_url(@entry.url).nil?
+      @entry.save
+    end
   end
   
   def show
