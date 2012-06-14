@@ -6,7 +6,15 @@ class EntriesController < ApplicationController
   
   def create
     @entry = Entry.new(params[:id])
+    @entry.save
   end
   
+  def show
+    @entry = Entry.find(params[:id])
+  end
 
+  def index
+    @e = Entry.all
+    @entries = @e.reverse
+  end
 end

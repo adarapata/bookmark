@@ -3,7 +3,7 @@ Bookmark::Application.routes.draw do
 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-  resources :entries, only: [:new, :create]
+  resources :entries
 
   root to: 'static_pages#home'
 
