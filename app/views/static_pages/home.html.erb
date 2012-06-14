@@ -1,7 +1,7 @@
 <%= provide(:title, '') %>
 <% if signed_in? %>
 
-  <h1>サインインしてる</h1>
+  <h1>サインインしてるよ</h1>
   <!-- Begin Left Column -->
   <div id="my_bookmark">
     <h2>new!</h2>
@@ -17,26 +17,20 @@
   <div id="new_entry">
     <h2>my bookmark</h2>
     <ul>
-      <li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
-　　　<li><a>セガサターン</a></li>
+      <%= render @bookmarks %>
     </ul>
   ページ遷移ここらへん		 
   </div>
   <!-- End Right Column -->
 
 <% else %>
- <h1>サインインしてない！</h1>
+ <h1>サインインしてないよ</h1>
  <section>
    <%= render :template => 'sessions/new' %>
  </section>
    <%= form_for(@user) do |f| %>
      <%= render :template => 'users/new' %>
    <% end %>
-
 <% end %>
 
 <div id="footer">
