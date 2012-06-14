@@ -3,7 +3,7 @@
   padding: 0px; }
 
 body {
-  background: #eee image-url("bg_78_9.gif") repeat;
+  background: #fff image-url("bg_78_9.gif") repeat;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 100%;
@@ -32,13 +32,13 @@ pre {
   font-size: 11px; }
 
 a {
-  color: #000;
+  color: #333;
   text-decoration: underline;
   &:visited {
-    color: #000;
+    color: #333;
   }
   &:hover {
-    color: #000;
+    color: #333;
     background-color: #7cfc00; 
   } 
 }
@@ -62,7 +62,7 @@ div {
   padding: 2px;
   background-color: #f00;
   display: table;
-  color:#000; }
+  color:#333; }
 
 #error_explanation {
   width: 350px;

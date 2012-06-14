@@ -3,14 +3,19 @@
   <h2>Sign In!</h2>
 
   <%= form_for(:session, url: sessions_path) do |f| %>
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </div>
 
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <div class="field">
+      <%= f.label :password %><br />
+      <%= f.password_field :password %>
+    </div>
 
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-
-    <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+    <div class="actions">
+      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+    </div>
 
   <% end %>
 </div>
