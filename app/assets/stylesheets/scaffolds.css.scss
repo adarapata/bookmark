@@ -100,9 +100,21 @@ div {
 
 .submit{
     border:1px solid #333;
-    padding: 4px 10px;
-    color: #7cfc00;
+    padding: 3px;
+    color: #fff;
     cursor: pointer;
-    background: #333;
+    background: #7cfc00;
     border-radius: 5px;
+}
+
+.text {
+  border:1px solid #333;
+  padding: 3px;
+  color: #333;
+  background: #fff;
+  border-radius: 3px;
+ }
+
+input:focus{
+ background: #7CFB00;
 }

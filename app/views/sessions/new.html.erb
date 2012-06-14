@@ -5,16 +5,16 @@
   <%= form_for(:session, url: sessions_path) do |f| %>
     <div class="field">
       <%= f.label :name %><br />
-      <%= f.text_field :name %>
+      <%= f.text_field :name ,class:"text" %>
     </div>
 
     <div class="field">
       <%= f.label :password %><br />
-      <%= f.password_field :password %>
+      <%= f.password_field :password ,class:"text" %>
     </div>
 
     <div class="actions">
-      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+      <%= f.submit "サインイン", class: "submit" %>
     </div>
 
   <% end %>
