@@ -12,16 +12,17 @@ body {
 p {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 0.8em;
-  line-height: 1em;
+  line-height: 1.3em;
   width: 400px;
   padding: 7px;
   margin: 10px auto;
   text-align: center;
  }
-ol, ul, td {
+ul {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 1em;
-  line-height: 1.3em; }
+  font-size: 0.8em;
+  line-height: 1em;
+  margin: 5px 0px; }
 
 h1{
   color:#000;
@@ -76,8 +77,9 @@ div {
   color: #7cfc00; }
 
 .alert-loginsuccess {
-  font-size: 1.2em;
-  color: #7cfc00; }
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: #00ff00; }
 
   
 .field_with_errors {

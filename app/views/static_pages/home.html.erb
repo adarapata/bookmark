@@ -4,22 +4,15 @@
   <h1><%= current_user.name %>さんのページ</h1>
   <!-- Begin Left Column -->
   <div id="my_bookmark">
-    <h2>new!</h2>
-    <ul>
-      <%= render @entries %>
-    </ul>
-    
-  ページ遷移ここらへん
+    <h2>new entry</h2>
+    <%= render @entries %>
   </div>
   <!-- End Left Column -->
 		 
   <!-- Begin Right Column -->
   <div id="new_entry">
     <h2>my bookmark</h2>
-    <ul>
-      <%= render @bookmarks %>
-    </ul>
-  ページ遷移ここらへん		 
+    <%= render @bookmarks %>		 
   </div>
   <!-- End Right Column -->
 
