@@ -1,14 +1,16 @@
 <%= provide(:title, "ブックマークを追加するページ") %>
 <% if signed_in? %>
 
-  <h1>ブックマークを追加するよ</h1>
-  <%= form_for(@entry) do |f| %>
-    <div class="sign">
-       <%= f.text_field :url %>
-       <%= f.submit %>
-    </div>
+  <h1>ブックマークを追加する</h1>
+  <div class="add">
+  <%= form_for(@entry,:html=>{:class=>"field_add",:id=>nil}) do |f| %>
     
-  <% end %>		 
+    <%= f.text_field :url,:size=>60,:class=>"text" %>
+    <%= f.submit "追加",class:"submit" %>
+    
+  <% end %>
+  <p>URLを入力して、追加ボタンを押して下さい</p>
+  </div>		 
 <% end %>
 
 <div id="footer">

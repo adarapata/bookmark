@@ -1,3 +1,25 @@
-// Place all the styles related to the bookmarks controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.add {
+  width: 600px;
+  height: 150px; 
+  border: 2px solid #000;
+  padding: 6px;
+  margin: 0px auto;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 1em;
+    margin: -7px;
+    margin-bottom: 0px;
+    color: #000; }
+  ul li {
+    font-size: 1em;
+    list-style-type: none; } }
+
+
+.field_add {
+ margin: 50px auto 10px;
+ }

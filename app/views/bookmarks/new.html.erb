@@ -1,8 +1,12 @@
-<%= form_for(@bookmark) do |f| %>
-  <%= hidden_field_tag "bookmark[entry_id]" , params[:entry_id] %>
-  <%= hidden_field_tag "bookmark[user_id]" , current_user.id %>
-  <%= @entry.title  %>
-  <%= f.text_field :comment %>
-  <%= f.submit %>
-<% end %>
+<h1>コメントを追加する</h1>
+<div class="add">
+  <%= form_for(@bookmark,:html=>{:class=>"field_add",:id=>nil}) do |f| %>
 
+    <%= hidden_field_tag "bookmark[entry_id]" , params[:entry_id] %>
+    <%= hidden_field_tag "bookmark[user_id]" , current_user.id %>
+    <h3><%= @entry.title  %></h3>
+    <%= f.text_field :comment,:size=>60,:class=>"text"%>
+    <%= f.submit "追加",class:"submit" %>
+
+  <% end %>
+</div>

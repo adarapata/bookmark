@@ -12,7 +12,7 @@ body {
 p {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 0.8em;
-  line-height: 1.3em;
+  line-height: 1em;
   width: 400px;
   padding: 7px;
   margin: 10px auto;
@@ -36,6 +36,12 @@ h2{
   font-size:1.2em;	
 }
 
+h3{
+  color: #333;
+  margin: 5px auto;
+  padding: 0px;
+  font-size: 1em;	
+}
 
 pre {
   background-color: #eee;
@@ -58,6 +64,7 @@ div {
   &.field,&.actions {
     margin-bottom: 10px;  
   } }
+
 
 #container {
   width: 800px;
