@@ -46,7 +46,7 @@ class UsersController < ApplicationController
       if @user.save
         sign_in @user
         flash[:loginsuccess] = 'User was successfully created.'
-        format.html { redirect_to @user  } 
+        format.html { redirect_to root_path  } 
         format.json { render json: @user, status: :created, location: @user }
       else
         #flash[:error] = @user.errors.full_messages
