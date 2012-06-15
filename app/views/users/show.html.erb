@@ -1,6 +1,7 @@
 <%= provide(:title, 'User Page!') %>
-<p id="notice"><%= notice %></p>
-
+<% if @message  %>
+    <p id="notice"><%= @message %></p>
+<% end %>
 <p>
 ようこそ<%= @user.name %>さん
 </p>

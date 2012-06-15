@@ -6,7 +6,7 @@ class Entry < ActiveRecord::Base
 
   def fetch_title
     html = open(self.url).read
-    match = html.match(/<title>(.*)<\/title>/)
+    match = html.match(/<title>(.*)<\/title>/i)
     self.title = NKF.nkf("-m0 -w", match[1])
   end
 

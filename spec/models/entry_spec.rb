@@ -41,6 +41,22 @@ describe "fetch title" do
       it { should == "任天堂ホームページ" }
       
     end
+    
+    context "タイトルタグが大文字の場合" do
+      
+      before do
+        @user = User.new(name:"user", password:"hoge",
+                         password_confirmation:"hoge")
+        @entry = Entry.new(url: "http://gs.inside-games.jp/news/340/34069.html")
+        
+        @entry.fetch_title
+      end
+      
+      subject { @entry.title }
+      
+      it { should_not be_empty }
+      it { should == "発売目前！『ロリポップチェーンソー』海外ローンチトレイラー - Game*Spark" }
+      
+    end
   end
-
 end
