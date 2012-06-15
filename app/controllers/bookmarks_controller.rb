@@ -10,9 +10,17 @@ class BookmarksController < ApplicationController
 
   def create
     @bookmark = Bookmark.new(params[:bookmark])
-    if @bookmark.save
+    @data = Bookmark.find_by_entry_id(@bookmark.entry.id)
+    if !@data
+      if @bookmark.save
+        redirect_to root_path
+      end
+    else
+      flash[:message] = "The bookmark of the page is already carried out. 
+"
       redirect_to root_path
     end
+    
     
   end
 
