@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class BookmarksController < ApplicationController
   def index
     @bookmarks = Bookmark.all
@@ -16,8 +17,7 @@ class BookmarksController < ApplicationController
         redirect_to root_path
       end
     else
-      flash[:message] = "The bookmark of the page is already carried out. 
-"
+      flash[:message] = "既にブックマークしているよ "
       redirect_to root_path
     end
   end
