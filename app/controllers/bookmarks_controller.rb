@@ -11,7 +11,8 @@ class BookmarksController < ApplicationController
 
   def create
     @bookmark = Bookmark.new(params[:bookmark])
-    @data = Bookmark.find_by_entry_id(@bookmark.entry.id)
+    @a = Bookmark.where(:user_id => @bookmark.user_id) 
+    @data = @a.find_by_entry_id(@bookmark.entry.id)
     if !@data
       if @bookmark.save
         redirect_to root_path

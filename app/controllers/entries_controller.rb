@@ -21,6 +21,6 @@ class EntriesController < ApplicationController
 
   def index
     @e = Entry.all
-    @entries = @e.reverse
+    @entries = @e.order("id DESC")
   end
 end
