@@ -20,8 +20,6 @@ class BookmarksController < ApplicationController
 "
       redirect_to root_path
     end
-    
-    
   end
 
   def show
@@ -33,7 +31,4 @@ class BookmarksController < ApplicationController
     @entry = Entry.new
   end
   
-  def add_comment
-
-  end
 end
