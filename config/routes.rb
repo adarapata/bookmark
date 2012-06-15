@@ -13,9 +13,10 @@ AriakeBook::Application.routes.draw do
   match '/signout', to: 'sessions#destroy', via: :delete
 
   match '/bookmark', to: 'bookmarks#new'
+  match '/destroy', to: 'bookmarks#destroy', via: :delete
   match '/add', to: 'bookmarks#add_bookmark'
   # The priority is based upon order of creation:
-  # first created -> highest priorit
+  # first created -> highest priority
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
