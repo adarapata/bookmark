@@ -214,7 +214,7 @@ DEPENDENCIES
   guard-rspec (= 0.5.5)
   guard-spork (= 0.3.2)
   jquery-rails
-  pg (= 0.12.2)
+  pg
   rails (= 3.2.5)
   rspec-rails
   sass-rails
