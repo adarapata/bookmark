@@ -37,4 +37,4 @@ group :test do
 end
 
 
-gem 'mysql2', :group => :production
+gem 'pg', :group => :production
