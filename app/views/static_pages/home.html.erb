@@ -1,7 +1,7 @@
 <%= provide(:title, '') %>
 <% if signed_in? %>
 
-  <h1>サインインしてるよ</h1>
+  <h1><%= current_user.name %>さんのページ</h1>
   <!-- Begin Left Column -->
   <div id="my_bookmark">
     <h2>new!</h2>
@@ -24,7 +24,7 @@
   <!-- End Right Column -->
 
 <% else %>
-  <h1>サインインしてないよ</h1>
+  <h1>ようこそGame Bookmarkへ！</h1>
   <p>
   Gamebookmarkは、ゲーム情報を集めたソーシャルブックマークです。<br />
   見てればなんとなくいいかんじにゲームの情報が手に入ります。
