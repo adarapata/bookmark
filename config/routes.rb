@@ -1,7 +1,7 @@
 AriakeBook::Application.routes.draw do
   get "static_pages/home"
 
-  resources :users
+  resources :users, only:[:new, :create, :destroy]
   resources :sessions, only: [:new, :create, :destroy]
   resources :entries
   resources :bookmarks
