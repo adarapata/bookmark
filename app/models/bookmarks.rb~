@@ -1,3 +1,0 @@
-class Bookmarks < ActiveRecord::Base
-  attr_accessible :comment, :entry_id, :title, :user_id
-end
